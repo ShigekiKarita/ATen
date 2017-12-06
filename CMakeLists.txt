@@ -416,3 +416,6 @@ else()
   add_subdirectory(contrib/data)
   add_subdirectory(contrib/meter)
 endif()
+
+# support older g++
+add_definitions(-D__STDC_FORMAT_MACROS)
